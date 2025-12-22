@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0f0f1a;
+  color: #f7fafc;
+}
+
+/* 全局滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a6578;
+}
+
+/* 选中文本样式 */
+::selection {
+  background: #3182ce;
+  color: white;
+}
+
+/* 链接样式 */
+a {
+  color: #63b3ed;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 按钮基础样式 */
+button {
+  font-family: inherit;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #63b3ed;
+  outline-offset: 2px;
+}

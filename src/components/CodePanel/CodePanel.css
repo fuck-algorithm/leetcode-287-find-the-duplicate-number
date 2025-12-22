@@ -1,0 +1,138 @@
+.code-panel {
+  display: flex;
+  flex-direction: column;
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #252526;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.code-title {
+  color: #cccccc;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.language-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.language-tab {
+  padding: 4px 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #858585;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.language-tab:hover {
+  color: #cccccc;
+  background: #3c3c3c;
+}
+
+.language-tab.active {
+  color: #ffffff;
+  background: #0e639c;
+  border-color: #0e639c;
+}
+
+.code-content {
+  flex: 1;
+  overflow: auto;
+  padding: 8px 0;
+}
+
+.code-pre {
+  margin: 0;
+  font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.code-line {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  min-height: 22px;
+  transition: background-color 0.2s;
+}
+
+.code-line.highlighted {
+  background: rgba(255, 213, 0, 0.15);
+  border-left: 3px solid #ffd500;
+  padding-left: 9px;
+}
+
+.line-number {
+  width: 35px;
+  color: #858585;
+  text-align: right;
+  padding-right: 12px;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.line-content {
+  flex: 1;
+  color: #d4d4d4;
+  white-space: pre;
+}
+
+.variable-value {
+  margin-left: 20px;
+  padding: 2px 8px;
+  background: #264f78;
+  border-radius: 4px;
+  color: #9cdcfe;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* 语法高亮 */
+.keyword {
+  color: #569cd6;
+}
+
+.comment {
+  color: #6a9955;
+}
+
+.number {
+  color: #b5cea8;
+}
+
+.string {
+  color: #ce9178;
+}
+
+/* 滚动条样式 */
+.code-content::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.code-content::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.code-content::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 5px;
+}
+
+.code-content::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
